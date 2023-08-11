@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="page_title">
+   <h1> United States Currency Archive 
+   </h1>
+</div>
+<div class="menu">
+<ul>
+    <li><a href="archive/">Archive</a> </li>
+    <li> <a href="exhibit/"> Exhibits </a></li>
+    <li> <a href="aboutus/"> About Us </a></li>
+</ul>
+</div>
+<img src="media/photographs/2bill.jpeg" 
+width="1200" 
+height="500"
+class="center"
+alt=”Rare $2 bill”>
+<h2>
+    Introduction 
+</h2>
+<section>
+    Our Digital Archive brings in the power of preservation to 
+    exquisite pieces of crafted currency, in an effort to reflect back and appreciate fine art. 
+    From coins that are exchanged in the marketplace to high worth valuables, feel free to check out our archive to marvel 
+    at some these excellent pieces. Each high resolution image gives us insight into the coin's 
+    exact size, condition, and material used for an in depth analysis. Even if you are not 
+    a coin collector, each of our coins can help you learn a different part of US History.
+</section>
+<h3>
+    Our Mission
+</h3>
+<section>
+    The United States Currency Archive aims to identify rare coins and denominations from past United States history. 
+    We strive to find coins with designs and patterns that are different then the more popular coins in circulation. We organized
+    these coins from our personal collections, and researched the historical context and meaning behind them.
+</section>
+<h3>
+    Motivation for the Project
+</h3>
+<section>
+    We believe that physical monetary objects keep becoming a relic of the past, and having a collection will be fruitful in reminding us of history. 
+    Coins and dollars are symbols of the US economy, and in the age of growing credit/debit NFC payments we notice
+    that the sentiment associated with physical money has slowed down. We wanted to learn the several 
+    different stories that come with each dollar bill and coin, like how Andrew 
+    Jackson (a former slave owner) has been used on the $20 bill since 1928. 
+</section>
+<div class ="parent">
+    <div>
+        <img src="media/photographs/1914-d-lincoln-wheat-cent-removebg-preview.png" 
+        width ="600"
+        height="300"
+        alt="One Cent">
+    </div>
+    <div>
+        <img src="media/photographs/images-removebg-preview.png" 
+        width ="600"
+        height="300"
+        alt="One Cent">
+    </div>
+</div>
+<h3>
+    Project Process
+</h3>
+<section>
+    Our project was created using frameworks, and tools taught in the Digital Humanities 
+    150A class at UC Berkeley taught by Professor Johnston. We utilized the Django development server to 
+    host our artifact data. Using these digital tools we were able to explore Digital Humanities concepts, 
+    primarily based upon figuring out the historical political context behind certain design choices. Each symbol 
+    on the coins represents a different theme in history, with some coins being more controversial than others. 
+</section>
+<h3> 
+    What We Learned
+</h3>
+<section>
+    Aside from learning about the history and signficance in a poltical context of every coin, 
+    we learned quite a bit from the development journey. When embedding images, we 
+    struggled with resizing and preserving the resolution of the image. On our archive, some of images
+    are lower resolution, but once you click on them they expand to full size where each detail of the coin is 
+    visible. Using HTML & CSS took a bit of patience, and we would have to troubleshoot for 
+    short streches trying to figure why the site is not updating the way as intended. 
+</section>
+<div class="logo">
+<img src="media/photographs/Seal_of_University_of_California,_Berkeley.svg.png"
+width="100"
+height="100"
+>
+</div>
+<p>
+    Copyright 2023; 
+    Janmesh Kalra, Beatrice Ongawan, and Camilla Vasquez 
+</p>
+
+
+{% endblock %}

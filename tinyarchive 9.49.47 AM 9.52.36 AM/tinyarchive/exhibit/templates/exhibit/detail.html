@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="page_title">
+    {{title}}
+</div>
+<div class="menu">
+
+<ul>
+    <li><a href="/ ">Home</a> </li>
+</ul>
+</div>
+
+<div class="content">
+    <div class="exhibit_items">
+        
+            {% for item in exhibit_items %}
+        
+                <div class="exhibit_item">
+                
+                        {% if item.image %}
+                        <a href="/archive/{{item.id}}"><img src="{% get_media_prefix %}{{item.image}}" /></a>
+                        {% endif %}
+                        <a href="/archive/{{item.id}}">{{item.name}}</a>
+  
+                        <section>{{item.description}}</section>
+                
+                </div>
+            {% endfor %}
+    </div>
+    <h2>
+        Coin History
+        </h2>
+    <div class="exhibit_text">
+        {{exhibit_text}}
+    </div>
+</div>
+
+{% endblock %}

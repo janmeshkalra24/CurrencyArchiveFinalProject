@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="page_title">
+    Exhibits
+</div>
+<div class="breadcrumb">
+    <ul>
+        <li><a href="/"> Home </a></li>
+    </ul>
+</div>
+<div class="content">
+    {% if exhibits %}
+    <ul>
+        {% for exhibit in exhibits %}
+            <div class="exhibit">
+                <a href="{{exhibit.id}}">{{exhibit.name}} </a>
+                     </div>
+    
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p>No exhibits yet!</p>
+    {% endif %}
+    </div>
+{% endblock %}
